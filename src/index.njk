@@ -1,0 +1,365 @@
+---
+layout: layouts/base.njk
+title: Less Time. Less Disruption.
+description: Advanced UV-cure manhole rehabilitation completed in as little as 2 hours — no excavation required.
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Core Shield home">
+      {% image images.logo.src, images.logo.alt %}
+    </a>
+    <div class="header-contact">
+      <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a>
+      <a class="header-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="top">
+    <div class="hero-media">
+      {% image images.hero.src, images.hero.alt, { class: "hero-image", loading:"eager", fetchpriority: "high", sizes: "100vw", widths: [800, 1200, 1600, 2000] } %}
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Manhole Rehabilitation</p>
+      <h1>Less Time.<br /> Less Disruption.</h1>
+      <p class="hero-lead">Advanced UV-cure manhole rehabilitation completed in as little as 2 hours — no excavation required.</p>
+      <p class="hero-support">Engineered for performance. Trusted on active infrastructure projects.</p>
+      <div class="button-group">
+        <a class="button button-primary" href="#contact">{{ site.ctaPrimary }}</a>
+        <a class="button button-secondary" href="#technical-info">{{ site.ctaSecondary }}</a>
+      </div>
+      <ul class="trust-bar" aria-label="Core Shield highlights">
+        <li>No excavation</li>
+        <li>Approx. 2 hour completion</li>
+        <li>Stops infiltration</li>
+        <li>Up to 50-year lifespan</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section audience-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Who It Serves</p>
+        <h2>Built for Contractors. Trusted by Engineers and Municipalities.</h2>
+      </div>
+      <div class="audience-grid two-col">
+        <article class="card audience-card">
+          <h3>For Contractors</h3>
+          <ul class="feature-list">
+            <li>Complete jobs faster with installations completed in as little as 2 hours.</li>
+            <li>Minimize crew and equipment requirements on site.</li>
+            <li>Avoid excavation and reduce disruption to surrounding work areas.</li>
+            <li>Keep projects moving with a fast, practical rehabilitation process.</li>
+          </ul>
+        </article>
+        <article class="card audience-card">
+          <h3>For Engineers &amp; Municipalities</h3>
+          <ul class="feature-list">
+            <li>Achieve a fully sealed manhole rehabilitation solution.</li>
+            <li>Stop infiltration at the source before lining begins.</li>
+            <li>Adapt to existing manhole geometry without time-consuming prefabrication.</li>
+            <li>Extend service life with an expected lifespan of up to 50 years.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Process</p>
+        <h2>How It Works</h2>
+      </div>
+      <div class="process-grid">
+        <article class="process-step card">
+          <span class="step-number">01</span>
+          <h3>Stop the Leak</h3>
+          <p>Water-reactive chemical grout is injected to expand on the outside of the manhole and stop infiltration before lining.</p>
+        </article>
+        <article class="process-step card">
+          <span class="step-number">02</span>
+          <h3>Install the Liner</h3>
+          <p>The expandable liner adapts to the geometry of the manhole automatically, reducing the need for prefabrication.</p>
+        </article>
+        <article class="process-step card">
+          <span class="step-number">03</span>
+          <h3>UV Cure</h3>
+          <p>Efficient UV curing technology creates a durable liner with a small site footprint and minimal disruption.</p>
+        </article>
+        <article class="process-step card">
+          <span class="step-number">04</span>
+          <h3>Seal &amp; Finish</h3>
+          <p>Once trimmed, open seams are sealed with a fully waterproof sealant for a complete rehabilitation result.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark advantages-section">
+    <div class="container two-col section-split">
+      <div>
+        <p class="eyebrow eyebrow-light">Why Core Shield</p>
+        <h2>A Smarter Approach to Manhole Rehabilitation</h2>
+        <p>Core Shield’s UV-cure lining system is designed for active infrastructure environments where speed, durability, and reduced disruption matter.</p>
+      </div>
+      <div>
+        <ul class="feature-list feature-list-light">
+          <li>No excavation required</li>
+          <li>Small jobsite footprint</li>
+          <li>One-step lining for wall, benching, and channel</li>
+          <li>Reduced disruption to traffic and surrounding infrastructure</li>
+          <li>Cost-effective alternative to traditional dig-and-replace methods</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section media-section">
+    <div class="container">
+      <div class="gallery-grid">
+        {% for item in images.gallery %}
+          <figure class="gallery-card">
+            {% image item.src, item.alt, {
+              class: "gallery-image",
+              sizes: "(min-width: 1180px) 280px, (min-width: 980px) 25vw, (min-width: 720px) 50vw, calc(100vw - 2rem)",
+              widths: [320, 480, 640, 800]
+            } %}
+
+            <figcaption>
+              <span class="gallery-stage">{{ item.stage }}</span>
+              <span class="gallery-title">{{ item.title }}</span>
+            </figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section results-section">
+    <div class="container two-col section-split">
+      <div>
+        <p class="eyebrow">Outcome</p>
+        <h2>The End Result</h2>
+        <p>A fully sealed, relined manhole with long-term durability, less disruption, and lower cost than traditional replacement approaches.</p>
+      </div>
+      <div class="card">
+        <ul class="feature-list">
+          <li>Fully rehabilitated manhole</li>
+          <li>Structurally reinforced interior lining</li>
+          <li>Fully sealed against infiltration</li>
+          <li>Long-term performance with an expected lifespan of up to 50 years</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Start Your Next Project with Core Shield</h2>
+        <p>Reach out to discuss upcoming rehabilitation work, request pricing, or ask for technical information.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a></li>
+          <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><strong>Address:</strong> {{ site.address }}, {{ site.cityRegionPostal }}</li>
+        </ul>
+      </div>
+      <div class="card form-card">
+      <form class="quote-form" id="project-request-form" action="https://api.web3forms.com/submit" method="POST" novalidate aria-describedby="form-help">
+  <div class="form-intro">
+    <h3>Request Project Information</h3>
+    <p id="form-help">
+      Required fields are marked with <span aria-hidden="true">*</span>.
+    </p>
+  </div>
+  <input type="hidden" name="access_key" value="474ee895-4c70-4459-bbe5-38f376197d83">
+  <input type="hidden" name="subject" value="Core Shield Website Request">
+  <input type="hidden" name="from_name" value="Core Shield Website">
+  <fieldset>
+    <legend class="sr-only">Project request details</legend>
+
+    <div class="form-grid">
+      <div class="form-field form-field-full">
+        <label for="request-type">I’m looking for <span aria-hidden="true">*</span></label>
+        <select id="request-type" name="requestType" required autocomplete="off">
+          <option value="">Choose one</option>
+          <option value="quote">A quote</option>
+          <option value="technical-info">Technical information</option>
+          <option value="general">A general project conversation</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="name">Name <span aria-hidden="true">*</span></label>
+        <input id="name" name="name" type="text" required autocomplete="name" />
+      </div>
+
+      <div class="form-field">
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" autocomplete="organization" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" />
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+      </div>
+
+      <div class="form-field form-field-full">
+        <label for="details">Project details <span aria-hidden="true">*</span></label>
+        <textarea id="details" name="details" rows="4" required placeholder="Tell us about the manhole condition, timeline, location, or technical information you need."></textarea>
+      </div>
+    </div>
+
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <button class="button button-primary button-full" type="submit">
+      Send Request
+    </button>
+
+    <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      {% image images.logo.src, images.logo.alt, { class: "footer-logo" } %}
+    </div>
+    <div class="footer-meta">
+      <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById("project-request-form");
+  const status = document.getElementById("form-status");
+
+  if (form) {
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      let hasError = false;
+
+      form.querySelectorAll(".error-message").forEach((el) => el.remove());
+      form.querySelectorAll(".form-field-error").forEach((el) => {
+        el.classList.remove("form-field-error");
+      });
+
+      const requiredFields = form.querySelectorAll("[required]");
+
+      requiredFields.forEach((field) => {
+        if (!field.checkValidity()) {
+          hasError = true;
+
+          const wrapper = field.closest(".form-field");
+          if (!wrapper) return;
+
+          wrapper.classList.add("form-field-error");
+
+          const error = document.createElement("p");
+          error.className = "error-message";
+          error.id = `${field.id}-error`;
+          error.textContent =
+            field.type === "email"
+              ? "Enter a valid email address."
+              : "This field is required.";
+
+          const existingDescription = field.getAttribute("aria-describedby");
+          field.setAttribute(
+            "aria-describedby",
+            existingDescription ? `${existingDescription} ${error.id}` : error.id
+          );
+
+          wrapper.appendChild(error);
+        }
+      });
+
+      if (hasError) {
+        status.className = "form-status error";
+        status.textContent = "Please fix the highlighted fields.";
+        form
+          .querySelector(".form-field-error input, .form-field-error textarea, .form-field-error select")
+          ?.focus();
+        return;
+      }
+
+      status.className = "form-status";
+      status.textContent = "Sending...";
+
+      const formData = new FormData(form);
+
+      const requestTypeLabels = {
+        quote: "Request a Quote",
+        "technical-info": "Request Technical Information",
+        general: "General Project Inquiry"
+      };
+
+      const requestType = formData.get("requestType");
+      const name = formData.get("name") || "";
+      const company = formData.get("company") || "";
+      const email = formData.get("email") || "";
+      const phone = formData.get("phone") || "";
+      const location = formData.get("location") || "";
+      const details = formData.get("details") || "";
+
+      const payload = {
+        access_key: formData.get("access_key"),
+        subject: `Core Shield: ${requestTypeLabels[requestType] || "Website Request"} from ${name}`,
+        from_name: "Core Shield Website",
+        email: email,
+
+        "Request Type": requestTypeLabels[requestType] || requestType,
+        "Name": name,
+        "Company": company || "Not provided",
+        "Email": email,
+        "Phone": phone || "Not provided",
+        "Project Location": location || "Not provided",
+        "Project Details": details,
+
+        // Keep this last so it is less prominent in the email.
+        "Submitted From": window.location.href
+      };
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          status.className = "form-status success";
+          status.textContent = "Thanks — your request has been sent.";
+          form.reset();
+        } else {
+          throw new Error(result.message || "Submission failed");
+        }
+      } catch (error) {
+        status.className = "form-status error";
+        status.textContent = "Something went wrong. Please try again or call us.";
+      }
+    });
+  }
+</script>

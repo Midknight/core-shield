@@ -1,0 +1,36 @@
+{
+  "logo": {
+    "src": "./src/assets/images/core-shield-logo.webp",
+    "alt": "Core Shield Inc. logo"
+  },
+  "hero": {
+    "src": "./src/assets/images/core-shield-hero.webp",
+    "alt": "Core Shield manhole rehabilitation completed"
+  },
+  "gallery": [
+    {
+      "stage": "Stage 1",
+      "title": "Pre-Lining Condition",
+      "src": "./src/assets/images/core-shield-stage-01.jpg",
+      "alt": "Manhole before Core Shield rehabilitation work begins"
+    },
+    {
+      "stage": "Stage 2",
+      "title": "Liner Installation in progress",
+      "src": "./src/assets/images/core-shield-stage-02.jpg",
+      "alt": "Core Shield liner being installed inside a manhole"
+    },
+    {
+      "stage": "Stage 3",
+      "title": "UV Curing Setup",
+      "src": "./src/assets/images/core-shield-stage-03.jpg",
+      "alt": "UV curing equipment being used during manhole rehabilitation"
+    },
+    {
+      "stage": "Stage 4",
+      "title": "Completed rehabilitation",
+      "src": "./src/assets/images/core-shield-stage-04.jpg",
+      "alt": "Completed relined manhole after waterproof sealing"
+    }
+  ]
+}
