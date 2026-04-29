@@ -316,7 +316,6 @@ description: Advanced UV-cure manhole rehabilitation completed in as little as 2
       const company = formData.get("company") || "";
       const email = formData.get("email") || "";
       const phone = formData.get("phone") || "";
-      const location = formData.get("location") || "";
       const details = formData.get("details") || "";
 
       const payload = {
@@ -330,7 +329,6 @@ description: Advanced UV-cure manhole rehabilitation completed in as little as 2
         "Company": company || "Not provided",
         "Email": email,
         "Phone": phone || "Not provided",
-        "Project Location": location || "Not provided",
         "Project Details": details,
 
         // Keep this last so it is less prominent in the email.
