@@ -40,6 +40,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/favicon");
+  eleventyConfig.addPassthroughCopy("src/assets/downloads");
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
