@@ -10,6 +10,7 @@ description: Advanced UV-cure manhole rehabilitation completed in as little as 2
     </a>
     <div class="header-contact">
       <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a>
+      <a href="tel:{{ site.secondaryPhone | replace(' ', '') }}">{{ site.secondaryPhoneDisplay }}</a>
       <a class="header-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
@@ -165,7 +166,7 @@ description: Advanced UV-cure manhole rehabilitation completed in as little as 2
         <h2>Start Your Next Project with Core Shield</h2>
         <p>Reach out to discuss upcoming rehabilitation work, request pricing, or ask for technical information.</p>
         <ul class="contact-list">
-          <li><strong>Phone:</strong> <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a></li>
+          <li><strong>Phone:</strong> <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a> or <a href="tel:{{ site.secondaryPhone | replace(' ', '') }}">{{ site.secondaryPhoneDisplay }}</a></li>
           <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           <li><strong>Address:</strong> {{ site.address }}, {{ site.cityRegionPostal }}</li>
         </ul>
@@ -244,6 +245,7 @@ description: Advanced UV-cure manhole rehabilitation completed in as little as 2
     </div>
     <div class="footer-meta">
       <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phoneDisplay }}</a>
+      <a href="tel:{{ site.secondaryPhone | replace(' ', '') }}">{{ site.secondaryPhoneDisplay }}</a>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
